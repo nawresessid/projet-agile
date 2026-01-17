@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Gestion de Stock - PC Market</title>
+    <link rel="stylesheet" href="Stock.css">
+    <script src="Stock.js" defer></script>
+</head>
+<body>
+
+<header>
+    <h1>📦 Gestion de Stock - PC Market</h1>
+</header>
+
+<section class="stock-section">
+    <h2>Ajouter un produit</h2>
+    <form id="add-form">
+        <input type="text" id="name" placeholder="Nom du produit" required>
+        <input type="number" id="price" placeholder="Prix" required>
+        <input type="number" id="quantity" placeholder="Quantité disponible" required>
+        <input type="text" id="img" placeholder="Nom image (ex: laptop1.jpg)" required>
+        <button type="submit">Ajouter</button>
+    </form>
+
+    <h2>Produits en stock</h2>
+    <table id="stock-table">
+        <thead>
+            <tr>
+                <th>Image</th>
+                <th>Nom</th>
+                <th>Prix</th>
+                <th>Quantité</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody id="stock-items">
+            <!-- Produits affichés ici -->
+        </tbody>
+    </table>
+    <a href="Produit.html">Voir Produits</a>
+</section>
+
+</body>
+</html>

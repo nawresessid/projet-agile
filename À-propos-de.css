@@ -1,0 +1,125 @@
+body {
+    font-family: 'Orbitron', 'Segoe UI', sans-serif;
+    background-color: #0d0d1a;
+    color: #ffffff;
+    margin: 0;
+}
+
+/* Header high-tech */
+header {
+    background: linear-gradient(90deg, #0f0f1f, #1a1a33, #0f2027);
+    padding: 25px 0;
+    text-align: center;
+    box-shadow: 0 5px 20px rgba(0,255,255,0.2);
+}
+
+header h1 {
+    color: #0ef;
+    font-size: 36px;
+    margin: 0;
+    letter-spacing: 1px;
+    text-shadow: 0 0 10px #0ef, 0 0 20px #0ef;
+}
+
+/* Navigation futuriste */
+header nav {
+    margin-top: 15px;
+}
+
+header nav a {
+    color: #0ef;
+    text-decoration: none;
+    margin: 0 20px;
+    font-weight: bold;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+header nav a:hover {
+    color: #0bc;
+    text-shadow: 0 0 10px #0bc, 0 0 20px #0bc;
+}
+
+/* Section About */
+.about {
+    padding: 60px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.about h2 {
+    color: #0ef;
+    font-size: 32px;
+    margin-bottom: 25px;
+    text-shadow: 0 0 8px #0ef;
+}
+
+.about p {
+    font-size: 18px;
+    line-height: 1.7;
+    color: #a0a0c0;
+    max-width: 900px;
+    margin: 0 auto 50px auto;
+}
+
+/* Cards High-tech */
+.features {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+}
+
+.feature-card {
+    background: linear-gradient(145deg, #1a1a33, #101022);
+    border: 1px solid #0ef;
+    border-radius: 20px;
+    padding: 30px;
+    width: 280px;
+    box-shadow: 0 0 15px #0ef, 0 0 30px #0ef inset;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.feature-card:hover {
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0 0 25px #0bc, 0 0 50px #0bc inset;
+}
+
+.feature-card h3 {
+    color: #0ef;
+    font-size: 22px;
+    margin-bottom: 15px;
+    text-shadow: 0 0 8px #0ef;
+}
+
+.feature-card p {
+    color: #b0b0d0;
+    font-size: 16px;
+}
+
+/* Footer High-tech */
+footer {
+    background-color: #101022;
+    color: #0ef;
+    text-align: center;
+    padding: 25px;
+    margin-top: 60px;
+    box-shadow: 0 -5px 20px rgba(0,255,255,0.2);
+}
+
+footer p {
+    margin: 0;
+    font-size: 16px;
+    text-shadow: 0 0 5px #0ef;
+}
+
+/* Animations néon pour les titres */
+@keyframes neonGlow {
+    0%, 100% { text-shadow: 0 0 5px #0ef, 0 0 10px #0ef; }
+    50% { text-shadow: 0 0 20px #0ef, 0 0 30px #0ef; }
+}
+
+h2 {
+    animation: neonGlow 1.5s infinite alternate;
+}

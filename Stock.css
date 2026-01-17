@@ -1,0 +1,95 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #0d0d1a;
+    color: #fff;
+    margin: 0;
+}
+
+header {
+    background: linear-gradient(90deg, #0f0f1f, #1a1a33);
+    text-align: center;
+    padding: 25px;
+    font-size: 28px;
+    color: #0ef;
+    text-shadow: 0 0 10px #0ef;
+}
+
+.stock-section {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #1b1b2f;
+    border-radius: 15px;
+    box-shadow: 0 0 20px #0ef;
+}
+
+.stock-section h2 {
+    color: #0ef;
+    margin-bottom: 15px;
+    text-shadow: 0 0 5px #0ef;
+}
+
+form input {
+    padding: 10px;
+    margin: 5px;
+    border-radius: 10px;
+    border: 1px solid #0ef;
+    background-color: #101022;
+    color: #fff;
+    width: calc(25% - 12px);
+}
+
+form button {
+    padding: 10px 20px;
+    border-radius: 15px;
+    border: none;
+    background-color: #0ef;
+    color: #1b1b2f;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #0bc;
+    color: #fff;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 25px;
+}
+
+th, td {
+    padding: 12px;
+    text-align: center;
+    border-bottom: 1px solid #444;
+}
+
+th {
+    background-color: #0f0f1f;
+    color: #0ef;
+}
+
+td img {
+    width: 60px;
+    border-radius: 8px;
+}
+
+.action-btn {
+    margin: 0 3px;
+    padding: 6px 10px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.edit-btn { background-color: #f1c40f; color: #1b1b2f; }
+.edit-btn:hover { background-color: #d4ac0d; color: #fff; }
+
+.delete-btn { background-color: #ff3f3f; color: #fff; }
+.delete-btn:hover { background-color: #e60000; }
+
+.update-btn { background-color: #0ef; color: #1b1b2f; }
+.update-btn:hover { background-color: #0bc; color: #fff; }

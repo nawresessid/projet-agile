@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Mon Panier</title>
+    <link rel="stylesheet" href="Panier.css">
+    
+</head>
+<body>
+
+<header>
+    <h1>🛒 Mon Panier</h1>
+</header>
+
+<section class="cart">
+    <table>
+        <thead>
+            <tr>
+                <th>Produit</th>
+                <th>Prix</th>
+                <th>Quantité</th>
+                <th>Sous-total</th>
+                <th>Supprimer</th>
+            </tr>
+        </thead>
+        <tbody id="cart-items"></tbody>
+    </table>
+    <h3>Total : <span id="total">0</span> DT</h3>
+    <button id="clear-cart">Vider le panier</button>
+</section>
+
+<section class="checkout">
+    <h2>💳 Confirmer la commande</h2>
+    <form id="checkout-form">
+        <div class="form-group">
+            <label for="prenom">Prénom :</label>
+            <input type="text" id="prenom" required>
+        </div>
+        <div class="form-group">
+            <label for="nom">Nom :</label>
+            <input type="text" id="nom" required>
+        </div>
+        <div class="form-group">
+            <label for="adresse">Adresse :</label>
+            <input type="text" id="adresse" required>
+        </div>
+        <div class="form-group">
+            <label for="tel">Numéro de téléphone :</label>
+            <input type="tel" id="tel" required>
+        </div>
+        <div class="checkout-buttons">
+            <button type="submit" id="confirm-btn">Confirmer</button>
+            <button type="button" id="modify-btn">Modifier</button>
+            <button type="button" id="cancel-btn">Annuler</button>
+        </div>
+    </form>
+</section>
+
+<script src="Stock.js"></script>
+<script src="Panier.js"></script>
+</body>
+</html>
